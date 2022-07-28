@@ -9,7 +9,10 @@ class BMICalculator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Colors.red,
+      ),
       home: InputPage(),
     );
   }
@@ -39,4 +42,3 @@ class _InputPageState extends State<InputPage> {
     );
   }
 }
-
