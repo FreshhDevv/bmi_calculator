@@ -73,7 +73,7 @@ class _InputPageState extends State<InputPage> {
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Height',
                     style: kLabelTextStyle,
                   ),
@@ -86,7 +86,7 @@ class _InputPageState extends State<InputPage> {
                         height.toString(),
                         style: kNumberTextStyle,
                       ),
-                      Text(
+                      const Text(
                         'cm',
                         style: kLabelTextStyle,
                       ),
@@ -96,8 +96,8 @@ class _InputPageState extends State<InputPage> {
                     value: height.toDouble(),
                     min: 120.0,
                     max: 220.0,
-                    activeColor: Color(0xFFEB1555),
-                    inactiveColor: Color(0xFF8D8E98),
+                    activeColor: const Color(0xFFEB1555),
+                    inactiveColor: const Color(0xFF8D8E98),
                     onChanged: (double newValue) {
                       setState(() {
                         height = newValue.round();
@@ -126,7 +126,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Container(
             color: kBottomContainerColor,
-            margin: EdgeInsets.only(top: 10.0),
+            margin: const EdgeInsets.only(top: 10.0),
             //This below will stretch the button to occupy the entire width of any screen
             width: double.infinity,
             height: kBottomContainerHeight,
