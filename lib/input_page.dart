@@ -196,7 +196,9 @@ class _InputPageState extends State<InputPage> {
                             RoundIconButton(
                                 icon: FontAwesomeIcons.plus,
                                 onPressed: () {
-                                  age++;
+                                  setState(() {
+                                    age++;
+                                  });
                                 })
                           ],
                         )
@@ -228,7 +230,9 @@ class RoundIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      onPressed: onPressed,
+      onPressed: () {
+        onPressed();
+      },
       elevation: 6.0,
       constraints: BoxConstraints.tightFor(
         width: 56.0,
