@@ -216,9 +216,15 @@ class _InputPageState extends State<InputPage> {
                   MaterialPageRoute(builder: (context) => ResultsPage()));
             },
             child: Container(
-              child: Text('CALCULATE'),
+              child: Center(
+                child: Text(
+                  'CALCULATE',
+                  style: kLargeButtonTextStyle,
+                ),
+              ),
               color: kBottomContainerColor,
               margin: const EdgeInsets.only(top: 10.0),
+              padding: EdgeInsets.only(bottom: 20.0),
               //This below will stretch the button to occupy the entire width of any screen
               width: double.infinity,
               height: kBottomContainerHeight,
