@@ -1,11 +1,11 @@
-import 'package:bmi/results_page.dart';
-import 'package:bmi/round_icon_button.dart';
+import 'package:bmi/screens/results_page.dart';
+import 'package:bmi/components/round_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'bottom_button.dart';
-import 'icon_content.dart';
-import 'reusable_card.dart';
-import 'constants.dart';
+import '../components/bottom_button.dart';
+import '../components/icon_content.dart';
+import '../components/reusable_card.dart';
+import '../constants.dart';
 
 enum Gender {
   male,
